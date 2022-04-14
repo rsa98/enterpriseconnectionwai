@@ -1,19 +1,16 @@
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route
-} from "react-router-dom";
-
-import Endereco from "./pages/Endereco/Endereco";
-import Login from "./pages/Login/Login";
-
+// importando bibliotecas
+import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// importando componentes
+import { NotFound } from "./pages/NotFound/index";
+import { Endereco } from "./pages/Endereco/index";
+// roteamento de paginas
 export function AppRoutes() {
     return (
         <Router>
             <Routes>
                 <Route path="/" element={<Endereco />} />
                 <Route path="/endereco" element={<Endereco />} />
-                <Route path="/login" element={<Login />} />
+                <Route path="*" element={<NotFound />} />
             </Routes>
         </Router>
     )
