@@ -1,14 +1,19 @@
 import menu from "../../assets/menu.svg";
 import notificacoes from "../../assets/notificacao.svg";
-
+import profile from "../../assets/profile.jpg";
+import "./style.css";
 
 function Endereco() {
     return (
       <div id="content">
         <header>
-          <img src={menu} alt="menu" />
-          <img src={notificacoes} alt="notificações" />
-          <img src="" alt="imagem de perfil" id="profile" />
+          <div className="container">
+            <img src={menu} alt="menu" />
+            <div className="alinhado-direita">
+              <img src={notificacoes} alt="notificações" />
+              <img src={profile} alt="imagem de perfil" id="profile" />
+            </div>
+          </div>
         </header>
         <main>
           esta é a main
