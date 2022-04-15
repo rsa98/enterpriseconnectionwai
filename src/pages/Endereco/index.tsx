@@ -15,7 +15,13 @@ let estado = "São Paulo";
 
 export function Endereco() {
 
-  const [localizar, setLocalizar] =  useState([]);
+  const [localizar, setLocalizar] =  useState({
+    cep: "não informado",
+    logradouro: "não localizado",
+    bairro: "não localizado",
+    localidade: "não localizado",
+    uf: "não localizado",
+  });
 
   function LocalizarCep(e) {
     // Previnindo que a página fique recarregando
