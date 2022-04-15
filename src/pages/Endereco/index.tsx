@@ -1,5 +1,5 @@
 //importando bibliotecas
-
+import { useEffect, useState } from "react";
 //importando stilos e imagens
 import menu from "../../assets/menu.svg";
 import notificacoes from "../../assets/notificacao.svg";
@@ -8,7 +8,6 @@ import busca from "../../assets/search.svg";
 import "./style.css";
 
 //variaveis
-let cep = "12345-678";
 let endereco = "Rua Pedro Borges da Silva";
 let bairro = "Faria Lima";
 let cidade = "Itapevi";
@@ -16,25 +15,28 @@ let estado = "São Paulo";
 
 export function Endereco() {
 
+  const [localizar, setLocalizar] =  useState([]);
+
   function LocalizarCep(e) {
     // Previnindo que a página fique recarregando
     e.preventDefault();
     // Pegando o cep informado e adicionando na constante
-    const cep = e.target.elements.cep.value;
+    const valor = e.target.elements.cep.value;
     // limpando o resultado apenas para numeros 
     // verificando se tem 8 digitos
-    console.log(cep);
-    if (cep?.length !== 8) {
+    if (valor?.length !== 8) {
       return;
     }
     // conectando com a api
-    fetch(`https://viacep.com.br/ws/${cep}/json/`)
+    fetch(`https://viacep.com.br/ws/${valor}/json/`)
     .then((res) => res.json())
-    .then((data) => console.log(data))
-  
+    .then((data) => {
+      console.log(data)
+      setLocalizar(data)
+    })
   }
 
-    return (
+  return (
       <div id="content">
         <header>
           <div className="container">
@@ -56,23 +58,23 @@ export function Endereco() {
             <h1>Endereço</h1>
             <div className="resultado">
               <h2>CEP</h2>
-              <p>{cep}</p>
+              <p>{localizar.cep}</p>
             </div>
             <div className="resultado">
               <h2>Endereço</h2>
-              <p>{endereco}</p>
+              <p>{localizar.logradouro}</p>
             </div>
             <div className="resultado">
               <h2>Bairro</h2>
-              <p>{bairro}</p>
+              <p>{localizar.bairro}</p>
             </div>
             <div className="resultado">
               <h2>Cidade</h2>
-              <p>{cidade}</p>
+              <p>{localizar.localidade}</p>
             </div>
             <div className="resultado">
               <h2>Estado</h2>
-              <p>{estado}</p>
+              <p>{localizar.uf}</p>
             </div>
           </div>
         </main>
