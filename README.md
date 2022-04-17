@@ -51,6 +51,4 @@ Faça download das dependências obrigatórias:
 
 ## Status atual
 
-Após rodar o servidor a primeira tela que você verá é a solicitada na atividade onde:
-* Você deverá acessar o seu CPF;
-* As informaçõe serão apresentadas no campo abaixo;
+Após rodar o servidor você será direcionado para a página de pesquisar CEP, como é solicitada na atividade, onde você pode colocar o seu CEP (apenas em números, ainda estamos adicionando códigos de limpeza) e abaixo serão apresentados os dados que retornaram da api.
