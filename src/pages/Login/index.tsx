@@ -31,12 +31,10 @@ export function Login() {
                     <button type="submit" className="entrar">Entrar</button>
                 </form>
                 <div className="area-link">
-                    <p>Não consegue acessar?</p>
-                    <a href="#">Esqueci a senha.</a>
+                    <p>Não consegue acessar? <a href="#">Esqueci a senha.</a></p>
                 </div>
                 <div className="area-link">
-                    <p>Ainda não tem um perfil?</p>
-                    <a href="#">Criar conta</a>
+                    <p>Ainda não tem um perfil? <a href="#">Criar conta</a></p>
                 </div>
             </div>
         </div>
