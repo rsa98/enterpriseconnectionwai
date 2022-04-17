@@ -1,13 +1,13 @@
 //importando bibliotecas
 import { useState } from "react";
-//importando stilos e imagens
+//importando estilos
 import "./endereco-style.css";
 import "../../styles/colorgrade.css";
+// importando imagens
 import menu from "../../assets/menu.svg";
 import notificacoes from "../../assets/notificacao.svg";
 import profile from "../../assets/profile.jpg";
 import busca from "../../assets/search.svg";
-
 
 export function Endereco() {
 

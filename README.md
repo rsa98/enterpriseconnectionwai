@@ -32,8 +32,8 @@ Faça download das dependências obrigatórias:
 * Instale as dependências para iniciar o servidor:
 
 ```
-3. vite install
-4. yarn install
+3. yarn install
+4. npm install
 5. yarn add react-router-dom
 ```
 
@@ -46,7 +46,7 @@ Faça download das dependências obrigatórias:
 * Após iniciar o servidor, acesse sua local host:
 
 ```
-7. http://localhost:3000/
+7. http://localhost:3000/ ou  http://localhost:3000/endereco
 ```
 
 ## Status atual

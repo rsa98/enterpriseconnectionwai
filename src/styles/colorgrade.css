@@ -1,6 +1,10 @@
 :root {
+    /* principal */
     --blank: #fff;
     --brand-color: #6644AF;
     --dark-brand-color: #381D73;
+    /* texto */
     --text-primary: #2b2b2b;
+    /* icones */
+    /* controles */
 }
