@@ -1,4 +1,4 @@
-![Who Am I?](https://imgur.com/undefined)
+![Who Am I?](./src/assets/banner-readme-um.png)
 
 # Conheça a plataforma
 > Daremos apenas uma breve descrição do que se trata, mas você pode encontrar toda a documentação oficial do aplicativo na nossa [wiki](https://fiapproject.notion.site/FIAP-Who-Am-I-f2d4e271dd4e4fc7ac93dd0d33eada49).
@@ -11,7 +11,7 @@ Os responsáveis por este projeto são:
 * Rafaella Santiago: [https://github.com/rsa98](https://github.com/rsa98)
 
 
-![Detalhes do app](https://imgur.com/2K50Jrh)
+![Detalhes do app](./src/assets/banner-readme-dois.png)
 
 
 ## Começando
