@@ -1,8 +1,27 @@
+:root {
+    --blank: #fff;
+    --brand-color: #6644AF;
+    --dark-brand-color: #381D73;
+    --text-primary: #2b2b2b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    background: #F6F8FA;
+    font-size: 62.5%;
+}
+
 /* Header */
 
 header {
     background: var(--blank);
-    height: 100px;
+    height: 10.0rem;
     width: 100vw;
 }
 
@@ -22,7 +41,7 @@ header .container .alinhado-direita {
 }
 
 header .container .alinhado-direita img {
-    margin-right: 24px;
+    margin-right: 2.4rem;
 }
 
 header .container .alinhado-direita img:last-child {
@@ -30,8 +49,8 @@ header .container .alinhado-direita img:last-child {
 }
 
 #profile {
-    height: 32px;
-    width: 32px;
+    height: 3.2rem;
+    width: 3.2rem;
     border-radius: 50px;
 }
 
@@ -74,8 +93,8 @@ main {
 }
 
 #buscar-cep button {
-    height: 64px;
-    width: 64px;
+    height: 6.4rem;
+    width: 6.4rem;
     border: none;
     display: flex;
     align-items: center;

@@ -1,17 +1,11 @@
 //importando bibliotecas
-import { useEffect, useState } from "react";
+import { useState } from "react";
 //importando stilos e imagens
+import "./endereco-style.css";
 import menu from "../../assets/menu.svg";
 import notificacoes from "../../assets/notificacao.svg";
 import profile from "../../assets/profile.jpg";
 import busca from "../../assets/search.svg";
-import "./style.css";
-
-//variaveis
-let endereco = "Rua Pedro Borges da Silva";
-let bairro = "Faria Lima";
-let cidade = "Itapevi";
-let estado = "São Paulo";
 
 export function Endereco() {
 
@@ -47,7 +41,7 @@ export function Endereco() {
         <header>
           <div className="container">
             <img src={menu} alt="menu" />
-            <div className="alinhado-direita">
+            <div className="alinhado-direitaa">
               <img src={notificacoes} alt="notificações" />
               <img src={profile} alt="imagem de perfil" id="profile" />
             </div>
