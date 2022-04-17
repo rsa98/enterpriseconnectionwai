@@ -35,21 +35,18 @@ Faça download das dependências obrigatórias:
 3. vite install
 4. yarn install
 5. yarn add react-router-dom
-
 ```
 
 * Para iniciar o servidor você deve dar o comando:
 
 ```
 6. yarn dev
-
 ```
 
 * Após iniciar o servidor, acesse sua local host:
 
 ```
 7. http://localhost:3000/
-
 ```
 
 ## Status atual
