@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* definição de fonte */
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    /* definição de box */
+    box-sizing: border-box;
+}

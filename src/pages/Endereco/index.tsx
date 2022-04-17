@@ -2,10 +2,12 @@
 import { useState } from "react";
 //importando stilos e imagens
 import "./endereco-style.css";
+import "../../styles/colorgrade.css";
 import menu from "../../assets/menu.svg";
 import notificacoes from "../../assets/notificacao.svg";
 import profile from "../../assets/profile.jpg";
 import busca from "../../assets/search.svg";
+
 
 export function Endereco() {
 
