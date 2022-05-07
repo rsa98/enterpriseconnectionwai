@@ -19,7 +19,7 @@ export function Endereco() {
     uf: "não localizado",
   });
 
-  function LocalizarCep(e) {
+  function LocalizarCep(e: { preventDefault: () => void; target: { elements: { cep: { value: any; }; }; }; }) {
     // Previnindo que a página fique recarregando
     e.preventDefault();
     // Pegando o cep informado e adicionando na constante
