@@ -19,7 +19,7 @@ export function Endereco() {
     uf: "não localizado",
   });
 
-  function LocalizarCep(e: { preventDefault: () => void; target: { elements: { cep: { value: any; }; }; }; }) {
+  function handleLocalizarCep(e: any) {
     // Previnindo que a página fique recarregando
     e.preventDefault();
     // Pegando o cep informado e adicionando na constante
@@ -50,7 +50,7 @@ export function Endereco() {
           </div>
         </header>
         <main>
-          <form onSubmit={LocalizarCep} id="buscar-cep">
+          <form onSubmit={(e) => handleLocalizarCep(e)} id="buscar-cep">
             <input type="text" name="cep" placeholder="Insire seu cep" maxLength={8} required/>
             <button type="submit">
               <img src={busca} alt="Buscar" />
