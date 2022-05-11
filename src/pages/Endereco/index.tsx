@@ -6,7 +6,6 @@ import "../../styles/colorgrade.css";
 // importando imagens
 import menu from "../../assets/menu.svg";
 import notificacoes from "../../assets/notificacao.svg";
-import profile from "../../assets/profile.jpg";
 import busca from "../../assets/search.svg";
 
 export function Endereco() {
@@ -45,7 +44,6 @@ export function Endereco() {
             <img src={menu} alt="menu" />
             <div className="alinhado-direitaa">
               <img src={notificacoes} alt="notificações" />
-              <img src={profile} alt="imagem de perfil" id="profile" />
             </div>
           </div>
         </header>
